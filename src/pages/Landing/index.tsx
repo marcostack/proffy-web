@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
 import landingImg from '../../assets/images/landing.svg';
@@ -7,7 +8,7 @@ import studyIcons from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
-import './style.css'
+import './styles.css'
 
 function Landing() {
   return (
@@ -21,15 +22,15 @@ function Landing() {
         <img src={landingImg} alt="Plataforma de Estudos" className="hero-image" />
 
         <div className="buttons-container">
-          <a href="" className="study">
+          <Link to="/study" className="study">
             <img src={studyIcons} alt="Estudar" />
             Estudar
-          </a>
+          </Link>
 
-          <a href="" className="give-classes">
+          <Link to="/give-classes" className="give-classes">
             <img src={giveClassesIcon} alt="Estudar" />
             Dar aulas
-          </a>
+          </Link>
         </div>
 
         <span className="total-connections">
