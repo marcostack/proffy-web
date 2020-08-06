@@ -8,19 +8,19 @@ function TeacherItem() {
   return (
     <article className="teacher-item">
       <header>
-        <img src="https://avatars2.githubusercontent.com/u/6643122?s=460&u=1e9e1f04b76fb5374e6a041f5e41dce83f3b5d92&v=4" alt="Mayk Brito" />
+        <img src="https://avatars1.githubusercontent.com/u/33449405?s=460&u=8f9343b4ae8971ebf54ba9f888525f8d86ef7a27&v=4" alt="Marcos Ferreira" />
         <div>
-          <strong>Mayk Brito</strong>
-          <span>Educação Física</span>
+          <strong>Marcos Ferreira</strong>
+          <span>Desenho</span>
         </div>
       </header>
 
       <p>
-        Entusiasta das melhores tecnologias de química avançada.
-            <br />
+        Entusiasta de comics e mangás.
         <br />
-            Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.
-          </p>
+        <br />
+        Apaixonado por desenhos americanos e japoneses, tendo como robby desenhar e programar aplicações web.
+      </p>
 
       <footer>
         <p>
