@@ -7,11 +7,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string,
 }
 
-const Input: FunctionComponent<InputProps> = (props, ...rest) => {
+const Input: FunctionComponent<InputProps> = ({ name, label, ...rest } ) => {
   return (
     <div className="input-block">
-      <label htmlFor={props.name}>Matéria</label>
-      <input type="text" id={props.name} { ...rest } />
+      <label htmlFor={name}>{label}</label>
+      <input type="text" id={name} { ...rest } />
     </div>
   );
 }
