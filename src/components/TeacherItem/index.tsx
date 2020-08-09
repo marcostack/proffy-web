@@ -1,36 +1,44 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
 
-function TeacherItem() {
+export interface Teacher {
+  id: number,
+  avatar: string,
+  bio: string,
+  cost: number,
+  name: string,
+  subject: string,
+  whatsapp: string
+}
+
+interface TeacherItemProps {
+  teacher: Teacher,
+}
+
+const TeacherItem: FunctionComponent<TeacherItemProps> = ({ teacher }) => {
   return (
     <article className="teacher-item">
       <header>
-        <img src="https://avatars1.githubusercontent.com/u/33449405?s=460&u=8f9343b4ae8971ebf54ba9f888525f8d86ef7a27&v=4" alt="Marcos Ferreira" />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Marcos Ferreira</strong>
-          <span>Desenho</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
-      <p>
-        Entusiasta de comics e mangás.
-        <br />
-        <br />
-        Apaixonado por desenhos americanos e japoneses, tendo como robby desenhar e programar aplicações web.
-      </p>
+      <p>{teacher.bio}</p>
 
       <footer>
         <p>
           Preço/hora
-              <strong>R$ 40,00</strong>
+              <strong>R$ {teacher.cost}</strong>
         </p>
         <button type="button">
-          <img src={whatsappIcon} alt="WhatsApp" />
-              Entrar em contato
-            </button>
+          <img src={whatsappIcon} alt="WhatsApp" /> Entrar em contato
+        </button>
       </footer>
     </article>
   );
