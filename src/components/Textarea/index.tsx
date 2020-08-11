@@ -3,8 +3,8 @@ import React, { FunctionComponent, TextareaHTMLAttributes } from 'react';
 import './styles.css';
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
-  name: string,
-  label: string,
+  name: string;
+  label: string;
 }
 
 const Textarea: FunctionComponent<TextareaProps> = ({ name, label, ...rest } ) => {

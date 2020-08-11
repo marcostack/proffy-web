@@ -7,8 +7,8 @@ import backIcon from '../../assets/images/icons/back.svg';
 import './styles.css';
 
 interface PageHeaderProps {
-  title: String,
-  description?: String
+  title: String;
+  description?: String;
 }
 
 const PageHeader: FunctionComponent<PageHeaderProps> = (props) => {

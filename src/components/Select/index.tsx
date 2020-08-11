@@ -3,11 +3,11 @@ import React, { FunctionComponent, SelectHTMLAttributes } from 'react';
 import './styles.css';
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
-  name: string,
-  label: string,
+  name: string;
+  label: string;
   options: Array<{
-    value: string,
-    label: string,
+    value: string;
+    label: string;
   }>
 }
 

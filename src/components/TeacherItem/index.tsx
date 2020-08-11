@@ -7,17 +7,17 @@ import api from '../../services/api';
 import './styles.css';
 
 export interface Teacher {
-  id: number,
-  avatar: string,
-  bio: string,
-  cost: number,
-  name: string,
-  subject: string,
-  whatsapp: string
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  subject: string;
+  whatsapp: string;
 }
 
 interface TeacherItemProps {
-  teacher: Teacher,
+  teacher: Teacher;
 }
 
 const TeacherItem: FunctionComponent<TeacherItemProps> = ({ teacher }) => {

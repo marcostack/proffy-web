@@ -15,7 +15,6 @@ import './styles.css'
 
 function Landing() {
   const [totalConnections, setTotalConnections] = useState(0);
-
   useEffect(() => {
     api.get('connections').then(response => {
       const { total } = response.data;

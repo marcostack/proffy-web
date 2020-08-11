@@ -3,8 +3,8 @@ import React, { FunctionComponent, InputHTMLAttributes } from 'react';
 import './styles.css';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string,
-  label: string,
+  name: string;
+  label: string;
 }
 
 const Input: FunctionComponent<InputProps> = ({ name, label, ...rest } ) => {
