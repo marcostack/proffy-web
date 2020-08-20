@@ -6,6 +6,8 @@
 
 >cd proffy-web
 
+### open file src/services/api.ts and set address ip to your serve
+
 >npm install
 
 >npm start
